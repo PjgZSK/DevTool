@@ -1,0 +1,9 @@
+- python
+    - make module (for mvc lua file automatic generation)
+        - installation:
+            - Windows
+                - add environment variable "PYTHONPATH" and append your python file into it
+            - Macos/Linux
+                - add "export PYTHONPATH="/path/to/your/directory:$PYTHONPATH" into ~/.bashrc or ~/.zshrc
+        - usage:
+            - `$ python -m makeModule ModuleName RootName` 
