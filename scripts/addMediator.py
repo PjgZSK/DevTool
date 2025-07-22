@@ -7,7 +7,7 @@ MEDIATOR_TEMPLATE = """
 --]]
 
 
-local {2}Mediator = OzClass("MainBattleMediator", Mediator)
+local {2}Mediator = OzClass("{2}Mediator", Mediator)
 
 {2}Mediator.AssetbundlePath = "{1}"
 {2}Mediator.PrefabName = "{2}Panel"
@@ -23,8 +23,8 @@ function {2}Mediator:handleNotification(notification)
 end
 
 function {2}Mediator:onRegister(data)
-    self:initData(data)
     self:initView()
+    self:initData(data)
     self:initEvent() 
 end
 
