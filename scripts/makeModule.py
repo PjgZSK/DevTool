@@ -61,7 +61,7 @@ def main():
     mediatorFileName = f"{m.name}Mediator.lua"  
     m.medPath = vDir.joinpath(mediatorFileName)
     m.medPathInDot = getPathInDot(m.medPath, rootName) 
-    m.medABPath = (f"{m.name}/{m.name}panel.u3d").tolower() # asset bundle path should be lower case
+    m.medABPath = (f"{m.name}/{m.name}panel.u3d").lower() # asset bundle path should be lower case
     try:
         addMediator(m)
     except Exception as e:
